@@ -16,26 +16,29 @@ button {
     background-color: #fdfdfd;
     color: #102f5e;
     border: 2px solid #102f5e;
-    padding: .3rem .6rem;
+    padding: .2rem .7rem;
     font-size: 1rem;
     cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
     transition: 0.4s;
+    border-radius: 8px;
+    font-weight: bold;
 
 }
 
 button:hover {
     background-color: #102f5e;
     color: #fff;
+    
 }
 
-button:hover >i {
+button:hover > i {
     color: #fff;
 }
 
-button:hover i {
+button i {
     color: #102f5e;
     font-weight: bold;
     pointer-events: none;
@@ -50,7 +53,7 @@ input, select {
 }
 
 /* todo header(onde fica todo as tarefas) */
-.todo-containers {
+.todo-container {
     max-width: 450px;
     margin: 3rem auto;
     background-color: #fdfdfd;
@@ -61,10 +64,11 @@ input, select {
 .todo-containers header{
     text-align: center;
     padding: 0 1rem 1rem;
-    border: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
 }
-
-#todo-form, #edit-form {
+ /* Todo form*/
+#todo-form, 
+#edit-form {
     padding: 1rem;
     border-bottom: 1px solid #ccc;
 
@@ -76,46 +80,54 @@ input, select {
     font-weight: bold;
 }
 
-.form-control input {
-    margin-right: .3rem;
+.form-control {
+    display: flex;
 }
 
-#cancel-edit-btn {
+.form-control input {
+    margin-right: 0.3rem;
+}
+
+#cansel-edit-btn {
     margin-top: 1rem;
 }
 
-/* #todo toobar */
-#toolbar{
+/*  Todo toolbar */
+#toolbar {
     padding: 1rem;
     border-bottom: 1px solid #ccc;
-    display: flex;    
+    display: flex;
 }
 
 #toolbar h4 {
-    margin-bottom: 0.5rem;
+    margin-bottom: .5rem;
 }
 
 #search {
     border-right: 1px solid #ddd;
     padding-right: 1rem;
-    margin-right: 1rem;
+    margin-right:  1rem;
     width: 65%;
     display: flex;
     flex-direction: column;
+
 }
 
 #search form {
     display: flex;
 }
 
-#search input{
+#search input {
     width: 100%;
     margin-right: 0.3rem;
-    
 }
 
 #filter {
     width: 35%;
     display: flex;
     flex-direction: column;
+}
+
+#filter select {
+    flex: 1 ;
 }
