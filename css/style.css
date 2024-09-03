@@ -7,7 +7,7 @@
 }
 
 body{
-    background-image: url("../assets/bg.jpg");
+    background-color: #102f5e;
     background-position: center;
     background-size: cover;
 }
@@ -16,7 +16,7 @@ button {
     background-color: #fdfdfd;
     color: #102f5e;
     border: 2px solid #102f5e;
-    padding: .2rem .7rem;
+    padding: .3rem .6rem;
     font-size: 1rem;
     cursor: pointer;
     display: flex;
@@ -55,14 +55,14 @@ input, select {
 /* todo header(onde fica todo as tarefas) */
 .todo-container {
     max-width: 450px;
-    margin: 3rem auto ;
+    margin: 3rem auto 0;
     background-color: #fdfdfd;
     padding: 1.5rem;
     border-radius: 15px;
 }
 
 .todo-containers header{
-    text-align: center;
+    text-align: center; /*Alinha o texto ao centro*/
     padding: 0 1rem 1rem;
     border-bottom: 1px solid #ccc;
 }
@@ -70,7 +70,7 @@ input, select {
 #todo-form, 
 #edit-form {
     padding: 1rem;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #ccc; /* Uma borda cinza que divide dos demais elementos*/
 
 }
 
@@ -109,7 +109,7 @@ input, select {
     margin-right:  1rem;
     width: 65%;
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* PARA O PESQUISAR FICAR EM CIMA E O IMPUT FICA EMBAIXO*/
 
 }
 
@@ -129,7 +129,7 @@ input, select {
 }
 
 #filter select {
-   flex: 1;
+   flex: 1; /* FAZ CRESCER AUTOMTICAMENTE ATÉ O DA LARGURA DA CONTAINER */
 }
 
 /* Todo List */
@@ -148,14 +148,16 @@ input, select {
 }
 
 .todo button {
-    margin-left: 0.4rem;
+    margin-left: 0.4rem; /*AFASTA OS BOTÕES UM DO OUTRO*/
 }
 
+/*MUDARÁ A COR DE FUNDO QUANDO A TAREFA ESTIVER FINALIZADA*/
 .done {
     background-color: #395169;
 }
+
 .done h3 {
     color: #fff;
-    text-decoration: line-through;
+    text-decoration: line-through; /* FAZ O SUBSCRITO*/
     font-style: italic;
 }
