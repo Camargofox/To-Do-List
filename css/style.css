@@ -54,7 +54,7 @@ input, select {
 
 /* todo header(onde fica todo as tarefas) */
 .todo-container {
-    max-width: 450px;
+    max-width: 94%;
     margin: 3rem auto 0;
     background-color: #fdfdfd;
     padding: 1.5rem;
